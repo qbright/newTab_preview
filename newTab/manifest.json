@@ -1,0 +1,13 @@
+{
+  "name":"newTab",
+ "version":"1.0.3.6",
+  "description": "videoAdOptimization",
+  "background": {
+    "scripts": [
+                "js/background.js"]
+  },
+  "web_accessible_resources":[
+      "*" 
+  ],
+  "manifest_version": 2
+}

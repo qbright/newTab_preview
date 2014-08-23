@@ -1,0 +1,160 @@
+
+body{
+	background:radial-gradient(circle,#175d74,#114C68);
+	font-family: 'Oswald', serif;
+}
+
+ul,li{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+.background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	display: block;
+	right: 0;
+	border: 0;
+	background-color: transparent;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+.nav_menu{
+	z-index: 11;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin:15px;
+}
+.menu{
+	width: 50px;
+	height: 50px;
+	background-image:url("../img/base/menu2.png");
+	background-size:50px 50px;
+	background-position: center center;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.menu:active{
+	opacity: 1;
+}
+
+.nav_weather_icon{
+	font-size: 60px;
+}
+
+.nav_weather_location{
+	width: 100px;
+	font-size: 22px;
+	text-indent: -10px;
+}
+
+.nav_weather{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	z-index: 11;
+	color: rgba(243, 243, 243, 0.65);
+	left:100%;
+	margin-left: -114px;
+	margin-top: 13px;
+	cursor: pointer;
+}
+.nav_weather:active{
+	color: rgba(243, 243, 243, 0.85);
+}
+.most_visit{
+	position: absolute;
+	z-index: 11;
+	width:calc(100% - 15px);
+	text-align: center;
+	top: calc(100% - 260px);
+}
+.most_visit ul li {
+	display: inline-block;
+	width: 250px;
+	height: 160px;
+	-webkit-user-select:none;
+}
+.most_visit_url{
+	color: rgba(255, 255, 255, 0.83);
+	font-weight: bold;
+}
+.most_visit_img_wrap{
+	width:250px;
+	height:150px;
+	background:rgba(240, 240, 240, 0.45);
+	border-radius: 5px;
+	box-shadow: 0 0 7px #464674 inset;
+	-webkit-transition:box-shadow 300ms;
+	margin-top: 8px;
+}
+
+.most_visit_img_wrap:hover{
+	box-shadow: 0 0 7px #0082E9 inset;
+}
+.most_visit_img{
+	width: 235px;
+	height: 135px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 235px 135px;
+	padding-top: 8px;
+	margin: 0 auto;
+}
+
+ .most_visit_img{
+	-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent) , to(rgba(250, 250, 250, 0.4)));
+} 
+
+.most_visit_toggler_icon{
+	background-image:url("../img/base/bar_arro.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 22px 22px;
+	width: 22px;
+	height: 22px;
+	margin: 0 auto;
+	margin-top: 4px;
+	-webkit-transition:transform 200ms;
+	-webkit-transform: rotate(180deg);
+}
+
+.most_visit_toggler[class*="open"] .most_visit_toggler_icon{
+	-webkit-transform:rotate(0deg);
+}
+
+.most_visit_toggler{
+	position: absolute;
+	z-index: 11;
+	width: 54px;
+	height: 29px;
+	background: -webkit-linear-gradient(top,#FCFCFC,#D8D7D7 50%,#BEBEBE);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	opacity: 0.5;
+	box-shadow: 0 0 1px #1A1A1A inset;
+	left: 50%;
+	margin-left: -27px;
+	top:auto;
+	bottom:0;
+	cursor: pointer;
+	-webkit-user-select:none;
+	-webkit-transition: opacity 200ms;
+}
+.most_visit_toggler:hover{
+	opacity: 0.9;	
+};
+.most_visit_toggler_icon:active~.most_visit_toggler{
+	box-shadow: 0 0 5px #1A1A1A inset;
+}
+.most_visit_toggler:active{
+	box-shadow: 0 0 5px #1A1A1A inset;
+}
