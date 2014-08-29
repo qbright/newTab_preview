@@ -3,62 +3,138 @@
 <head>
 	<meta charset="UTF-8">
 	<title>newTab</title>
+
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="font/clear-sans.css">
 	<link rel="stylesheet" href="css/weather-icons.min.css">
 	<link rel="stylesheet" href="css/newTab.css">
 </head>
 <body>
 	<div class="background" style="background-image:url('img/3.jpg')"></div>
 	<nav class="nav_menu">
-		<div class="menu"></div>
+		<div class="menu" data-inamin="zoomInLeft" data-outamin="bounceOutLeft"></div>
 	</nav>
+	
+	<nav class="app_list_container main  hidden">
+		<ul class="app_list main">
+			<li class="hidden" data-inamin="bounceInDown" data-outamin="bounceOutUp">
+				<img src="img/menu/menu_1.png" data-anim="swing">
+			</li>
+			<li class="hidden" data-inamin="bounceInLeft" data-outamin="bounceOutLeft">
+				<img src="img/menu/menu_2.png" data-anim="rubberBand">
+			</li>
+			<li class="hidden" data-inamin="flipInX" data-outamin="flipOutY">
+				<img src="img/menu/menu_3.png" data-anim="pulse">
+			</li>
+			<li class="hidden" data-inamin="lightSpeedIn" data-outamin="lightSpeedOut">
+				<img src="img/menu/menu_4.png" data-anim="wobble">
+			</li>
+			<li class="hidden" data-inamin="rotateInDownLeft" data-outamin="rotateOutUpLeft">
+				<img src="img/menu/menu_5.png" data-anim="tada">
+			</li>
+			<li class="hidden last" data-inamin="zoomIn" data-outamin="hinge">
+				<img src="img/menu/menu_6.png" data-anim="flash">
+			</li>
+		</ul>
+
+	</nav>
+
+
+	<nav class="app_list_container sub  hidden">
+		<ul class="app_list sub">
+			<li class="hidden" >
+				<img src="img/app/app_1.png">
+			</li>
+			<li class="hidden">
+				<img src="img/app/app_2.png">
+			</li>
+			<li class="hidden">
+				<img src="img/app/app_3.png">
+			</li>
+			<li class="hidden">
+				<img src="img/app/app_4.png">
+			</li>
+			<li class="hidden">
+				<img src="img/app/app_5.png">
+			</li>
+			<li class="hidden">
+				<img src="img/app/app_6.png">
+			</li>
+			<li class="hidden">
+				<img src="img/app/app_7.png">
+			</li>
+			<li class="hidden">
+				<img src="img/app/app_8.png">
+			</li>
+			<li class="hidden last">
+				<img src="img/app/app_9.png">
+			</li>
+		</ul>
+
+	</nav>
+
 	<nav class="nav_weather " style="">
 
 		<div class="wi wi-day-cloudy nav_weather_icon"></div>	
 		<div class="nav_weather_location">珠海/30℃</div>
 	</nav>
-	<nav class="most_visit_toggler">
-		<div class="most_visit_toggler_icon"></div>
-	</nav>
-	<section class="most_visit">
-		<ul>	
-			<li >
-				<div class="most_visit_url">baidu.com</div>
+	
+	<section class="search_container ">
+	   <div class="search_normal">	
+			<div class="search_text" data-text="Search">
+				<span class="char ">S</span><span class="char">e</span><span class="char ">a</span><span class="char ">r</span><span class="char ">c</span><span class="char ">h</span>
+			</div>
+			<input class="search_input" >
+	   </div>
+	   
+	</section>
+	
+	<section class="most_visit amin " style="-webkit-perspective:2130 ">
+		<ul >	
+			<li style="-webkit-transform: translate3d(-3px,0,40px) rotateY(18deg);">
+				<div class="most_visit_url">weibo.com</div>
 				<div class="most_visit_img_wrap">
 					<img class="most_visit_img" src="img/history_1.png">
 			</li>
 			
-			<li style="-webkit-transform: translateY(-16px) translateX(6px);">
+			<li style="-webkit-transform: translate3d(0,0,25px) rotateY(12deg);">
 				<div class="most_visit_url">baidu.com</div>
 				<div class="most_visit_img_wrap">
 					<img class="most_visit_img" src="img/history_3.png" style="-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(44%, transparent) , to(rgba(250, 250, 250, 0.4)));">
 				</div>
 			</li>
-			<li style="-webkit-transform: translateY(-32px) rotateY(-15deg);-webkit-transform-origin: center right;">
-				<div class="most_visit_url">baidu.com</div>
+			<li style="-webkit-transform: translate3d(0,0,5px) rotateY(6deg);">
+				<div class="most_visit_url">github.com</div>
 				<div class="most_visit_img_wrap">
 					<img class="most_visit_img" src="img/history_4.png" style="-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(35%, transparent) , to(rgba(250, 250, 250, 0.4)));" >
 				</div>
 			</li>
-			<li style="-webkit-transform: translateY(-32px) rotateY(15deg);-webkit-transform-origin: center left;">
-				<div class="most_visit_url">baidu.com</div>
+			<li style="-webkit-transform: translate3d(0,0,5px) rotateY(-6deg);">
+				<div class="most_visit_url">ued.com</div>
 				<div class="most_visit_img_wrap">
 					<img class="most_visit_img" style="-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(35%, transparent) , to(rgba(250, 250, 250, 0.4)));" src="img/history_5.png">
 				</div>
 			</li>
-			<li style="-webkit-transform: translateY(-16px) translateX(-6px);">
+			<li style="-webkit-transform: translate3d(0,0,25px) rotateY(-12deg);">
 				<div class="most_visit_url">baidu.com</div>
 				<div class="most_visit_img_wrap">
 					<img class="most_visit_img" src="img/history_6.png" style="-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(44%, transparent) , to(rgba(250, 250, 250, 0.4)));">
 				</div>
 			</li>
-			<li>
+			<li style="-webkit-transform: translate3d(3px,0,40px) rotateY(-18deg);">
 				<div class="most_visit_url">baidu.com</div>
 				<div class="most_visit_img_wrap">
 					<img class="most_visit_img" src="img/history_2.png">
 				</div>
 			</li>
+
 		</ul>
 
 	</section>
+	<nav class="most_visit_toggler" style="display:none;">
+		<div class="most_visit_toggler_icon"></div>
+	</nav>
+	<script src="js/index.js"></script>
+
 </body>
 </html>
